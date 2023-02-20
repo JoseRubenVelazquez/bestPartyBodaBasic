@@ -508,8 +508,7 @@ footer{
   }
 @media(min-width: 320px) and (max-width: 650px){
   *{
-    /*font-family: 'Edwardian Script ITC', cursive !important;*/
-    font-family: 'Palace Script MT';
+    font-family: 'Edwardian Script ITC', cursive !important;
   }
   h1{
     font-size: 40px;
