@@ -1,7 +1,7 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: 'Palace Script MT', cursive;
+    font-family: 'Edwardian Script ITC', cursive;
     list-style: none;
     box-sizing: border-box;
     color: #000;
@@ -373,12 +373,14 @@ span{
 .modal-footer button{
     font-size: 30px;
     background-color: #fff;
+    line-height: 0;
     border: 2px solid #000;
 }
 .modal-footer button:hover{
     font-size: 30px;
     background-color: #fff;
-    border: 2px solid #000;
+    line-height: 0;
+    border: 2px solid red;
     color: red;
 }
 
@@ -668,12 +670,22 @@ footer{
     border-color: #000;
     translate: 1px;
     font-size: 22px;
-    color: #000;
+    color:
+     #000;
 }
-  .modal-footer button:hover{
+.modal-footer button{
+  font-size: 30px;
+  background-color: #fff;
+  line-height: 0;
+  width: 130px;
+  border: 2px solid #000;
+}
+.modal-footer button:hover{
     font-size: 28px !important;
     background-color: #fff;
-    border: 2px solid #000;
+    width: 130px;
+    line-height: 4px;
+    border: 2px solid red;
     color: red;
 }
 .confirm{
