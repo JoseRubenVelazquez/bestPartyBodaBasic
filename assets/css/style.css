@@ -1,0 +1,709 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Edwardian Script ITC', cursive;
+    list-style: none;
+    box-sizing: border-box;
+    color: #000;
+}
+
+/*Principal container*/
+.fondo{
+    background-image: url(../images/fondo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: auto;
+}
+
+.logo{
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+}
+
+h1{
+    font-size: 60px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.img-fluid{
+  display: block;
+  width: auto;
+  height: 600px;
+  margin: 10px auto;
+}
+
+p{
+  font-size: 30px;
+  text-align: center;
+}
+
+.names{
+  font-size: 60px;
+}
+
+h2{
+  text-align: center;
+  font-size: 40px;
+  font-weight: bold;
+}
+audio{
+  display: block;
+  margin: 0 auto 20px;
+}
+.pases{
+  font-size: 40px !important;
+}
+
+/*Papás Novia*/
+.acomp{
+  display: block;
+  width: 250px;
+  height: 250px;
+  margin: auto;
+}
+
+h3{
+  font-size: 35px !important;
+  text-align: center;
+} 
+
+.tarj{
+  width:250px;
+  height:300px;
+  position:relative;
+  top:160px;
+  left:50%;
+  margin: 0 0 30px 0;
+  transform:translate(-50%,-50%)perspective(2000px);
+  background:#fff;
+  transform-style:preserve-3d;
+  box-shadow:inset 300px 0 50px rgba(0,0,0,.5),0 20px 100px rgba(0,0,0,.5);
+  transition:1s;
+}
+
+.tarj:hover{
+  transform:translate(-50%,-50%) perspective(2000px) rotate(-10deg);  
+  box-shadow:inset 20px 0 50px rgba(0,0,0,.5),0 10px 100px rgba(0,0,0,.5);
+}
+
+.tarj:before{
+  content:'';
+  position:absolute;
+  top:-5px;
+  left:0;
+  width:100%;
+  height:5px;
+  background:#666262;
+  transform-origin:bottom;
+  transform:skewX(-45deg)
+}
+
+.tarj:after{
+  content:'';
+  position:absolute;
+  top:0;
+  right:-5px;
+  width:5px;
+  height:100%;
+  background:#666262;
+  transform-origin:left;
+  transform:skewY(-45deg);
+}
+
+.tarj .imgBox img{
+  height:100%;
+  width:100%;
+}
+
+.tarj .imgBox{
+  width:100%;
+  height:100%;
+  position:relative;
+  transform-origin:left;
+  transition:1s cubic-bezier(.15,1.7,.84,.58);
+}
+
+.tarj:hover .imgBox{
+  transform:rotateY(-125deg)
+}
+
+.tarj .details{
+  position:absolute;
+  top:0;
+  left:0;
+  margin-top: 50%;
+  box-sizing:boreder-box;
+  padding:20px;
+  z-index:-1;
+}
+.tarj .details h3{
+  font-family: 'Edwardian Script ITC', cursive;
+  font-size: 30px;
+  font-weight: bold;
+}
+/*Papas Novio*/
+.papasNovio {
+  width: 250px;
+  height: 300px;
+  /* center content using flex box */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* overlay */
+  box-shadow: 0 0 0 100px inset, 0 0 5px grey;
+  /* hover out transition */
+  transition: box-shadow 1s;
+  margin: auto;
+}
+
+
+/*Padrinos */
+.papasNovio::after {
+  width: 80%;
+  height: 80%;
+  display: block;
+  white-space: pre;
+  font: 20pt 'Edwardian Script ITC', cursive;
+  color: #fff;
+  font-weight: 700;
+  border: 2px solid;
+  text-align: center;
+  /* center content using flex box */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* hover out transition */
+  transition: opacity 1s .5s;
+}
+
+/* reveal papas del Novio picture on hover */
+.papasNovio:hover {
+  box-shadow: 0 0 0 5px inset, 0 0 5px grey, 0 0 10px grey inset;
+  transition: box-shadow 1s;
+}
+
+
+/* Papás del novio on hover */
+.papasNovio:hover::after {
+  opacity: 0;
+  transition: opacity .5s;
+}
+
+#papasNovio {
+  background-image: url(../images/papasnovio.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-size: 250px 300px;
+  color: rgba(106, 110, 108, 0.9);
+}
+
+#papasNovio::after {
+  font-family: 'Edwardian Script ITC', cursive;;
+  content: 'Paola & Diego';
+  font-size: 35px;
+}
+
+/*Padrinos*/
+.snip1482 {
+  font-weight: 700;
+  position: relative;
+  margin: auto;
+  min-width: 250px;
+  max-width: 250px;
+  min-height: 300px;
+  width: 100%;
+  color: #ffffff;
+  text-align: right;
+  line-height: 1.4em;
+  background-color: gray;
+  font-size: 16px;
+}
+.snip1482 * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+}
+.snip1482 img {
+  position: absolute;
+  right: 0%;
+  top: 50%;
+  opacity: 1;
+  width: 100%;
+  height: 300px;
+  -webkit-transform: translate(0%, -50%);
+  transform: translate(0%, -50%);
+}
+.snip1482 figcaption {
+  position: absolute;
+  font-family: 'Edwardian Script ITC', cursive;
+  width: 50%;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  padding: 20px 0 20px 20px;
+}
+.snip1482 h3{
+  font-weight: bold;
+  font-size: 35px;
+}
+.snip1482 h2,
+.snip1482 p {
+  margin: 0;
+  width: 100%;
+  -webkit-transform: translateX(20px);
+  transform: translateX(20px);
+  opacity: 0;
+}
+.snip1482 h2 {
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+.snip1482 p {
+  font-size: 0.8em;
+  font-weight: bold;
+  font-size: 50px;
+}
+.snip1482 a {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+.snip1482:hover img,
+.snip1482.hover img {
+  width: 55%;
+  height: 50%;
+  right: -10%;
+}
+.snip1482:hover figcaption h2,
+.snip1482.hover figcaption h2,
+.snip1482:hover figcaption p,
+.snip1482.hover figcaption p {
+  -webkit-transform: translateX(0px);
+  transform: translateX(0px);
+  opacity: 1;
+}
+.inf{
+    font-size: 15px;
+}
+
+/*Galeria de fotos*/
+.galery{
+  font-size: 50px;
+  margin: 5px auto;
+  text-align: center;
+  font-weight: 700;
+}
+.photos{
+  position: relative;
+  margin: auto;
+  width: 100%;
+  height: 700px;
+}
+.photos img{
+  width: 100%;
+  height: 500px;  
+}
+
+/*church and terrace*/
+.ceremony{
+    font-size: 50px;
+}
+.reception{
+    font-size: 50px;
+}
+.rows{
+    margin-top: -210px;
+}
+.cards{
+    height: auto;
+}
+.card-img-top{
+    height: 300px;
+}
+h5{
+    font-size: 30px;
+    font-weight: 900;
+}
+span{
+    font-weight: 900;
+}
+.btn{
+    width: 200px;
+    height: 40px;
+    border: 2px solid;
+    border-color: #000;
+    border-radius: 10px;
+    line-height: 20px;
+    font-weight: 700;
+    cursor: pointer;
+    font-size: 25px;
+    color: #000;
+}
+.btn:hover{
+    cursor: pointer;
+    border-color: #000;
+    translate: 1px;
+    font-size: 28px;
+    color: #000;
+}
+.btns{
+    width: 200px;
+    height: 40px;
+    border: 2px solid;
+    border-color: gray;
+    border-radius: 10px;
+    background-color: gray;
+    font-weight: 700;
+    cursor: pointer;
+    font-size: 18px;
+    color: #000;
+}
+.btns:hover{
+    cursor: pointer;
+    background-color: #000;
+    border: #000;
+}
+.modal-footer button{
+    font-size: 30px;
+    background-color: #fff;
+    border: 2px solid #000;
+}
+.modal-footer button:hover{
+    font-size: 30px;
+    background-color: #fff;
+    border: 2px solid #000;
+    color: red;
+}
+
+/*Dress code*/
+.dresscode{
+  font-size: 50px;
+  margin-top: 20px;
+}
+.woman img{
+  display: block;
+  margin: auto;
+  height: 200px;
+}
+.man img{
+  display: block;
+  margin: auto;
+  height: 200px;
+}
+
+/*Confirmation*/
+.conf{
+    font-size: 50px;
+    margin-top: 50px;
+}
+.confirm{
+  text-align: center;
+  width: 300px;
+  margin: 10px auto;
+  line-height: 40px;
+  text-decoration: none; 
+}
+.confirm:hover{
+  translate: 1px;
+  color: #000;  
+}
+
+/*Whatsap Button*/
+.confirm{
+    border: 2px solid #000;
+    border-radius: 10px;
+    width: 250px;
+}
+.button-whatsapp{
+    display: table;
+    text-decoration: none; 
+    font-size: 30px;
+    background: url(../images/whatsapp.png) no-repeat 40px center;background-size: 28px;
+    width: 270px;
+    height: 40px;   
+}
+.button-whatsapp:hover{
+    text-decoration: none;
+    font-size: 32px;
+}
+.container .button-whatsapp{
+    color: #000;
+    font-weight: 800;
+}
+
+/*Footer*/
+footer{
+    width: 100%;
+    height: 65px;
+    margin: 10px auto ;
+    color: #000;
+    border-top: 2px solid #000;
+    border-bottom: 2px solid #000;
+}
+
+.footer{
+    text-align: center;
+    line-height: 25px;
+    letter-spacing: 3px;
+    font-size: 35px;
+    padding-top: 5px;
+}
+
+.phone{
+    text-align: center;
+    line-height: 2px;
+    letter-spacing: 3px;
+}
+
+.mensaje-final{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 122px;
+    bottom: 0;
+    display: grid;
+    place-items: center;
+    transform: translateY(-250%);
+    transition: ease-in-out 0.5s;
+}
+.faltan{
+  margin: 20px auto 0;
+}
+.pase img{
+  display: block;
+  margin: auto;
+  width: 300px;
+  height: 250px;
+}
+.valido{
+  margin-top: -170px;
+}
+
+/*Temporizador*/
+.timer{
+    display: inline-block;
+    color: #000;
+    font-size: 20px;
+    position: relative;
+    margin:  auto;
+    bottom: 30px;
+  }
+.countdown div{
+    float: left;
+    padding: 0 10px;
+    color: #000;
+    font-weight: 500; 
+  }
+.countdown p{
+      width: auto;
+      font-weight: bolder;
+      font-size: 35px !important;
+  }
+@media(min-width: 320px) and (max-width: 650px){
+  *{
+    font-family: 'Edwardian Script ITC', cursive !important;
+  }
+  h1{
+    font-family: 'Edwardian Script ITC', cursive !important;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+  }
+  .img-fluid{
+    display: block;
+    width: auto;
+    height: 550px;
+    margin: 10px auto;
+  }
+  p{
+    font-family: 'Edwardian Script ITC', cursive !important;
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .names{
+    font-size: 40px;
+    font-family: 'Edwardian Script ITC', cursive !important;
+  }
+
+  h2{
+    font-family: 'Edwardian Script ITC', cursive !important;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+  }
+
+  .galery{
+    font-size: 40px;
+    margin: 5px auto;
+    text-align: center;
+    font-weight: 700;
+  }
+  .ceremony{
+    font-family: 'Edwardian Script ITC', cursive !important;
+    font-size: 35px;
+  }
+  .reception{
+    font-family: 'Edwardian Script ITC', cursive !important;
+    font-size: 40px;
+  }
+  .card-title{
+    font-family: 'Edwardian Script ITC', cursive !important;
+    font-size: 22px !important;
+  }
+  .conf{
+    font-family: 'Edwardian Script ITC', cursive !important;
+    font-size: 35px;
+    margin-top: 20px;
+  }
+  .valido{
+    margin-top: -110px;
+  }
+  .pase img{
+    display: block;
+    margin: auto;
+    width: 200px !important;
+    height: 150px !important;
+  }
+  .pases{
+    font-size: 30px !important;
+  }
+  /*Dress code*/
+  .dresscode{
+    font-size: 40px !important;
+    margin-bottom: -5px !important;
+  }
+  .woman img{
+    display: block;
+    margin: auto;
+    width: 50px !important;
+    height: 100px !important;
+  }
+  .man img{
+    display: block;
+    margin: auto;
+    width: 150px !important;
+    height: 100px !important;
+  }
+  
+  .faltan{
+    margin: 10px auto 50px;
+  }
+  .timer{
+    display: inline-block;
+    padding: 50px;
+    color: #000;
+    font-size: 20px;
+    position: relative;
+    bottom: 30px;
+    text-align: center;
+    height: 100px;
+    margin-top: -500px;
+  }
+  .countdown div{
+    float: left;
+    padding: 10px;
+    color: #000;
+    font-weight: 500; 
+    height: 100px; 
+  }
+  .countdown p{
+      width: auto;
+      font-weight: bold;
+      font-size: 30px !important;
+      margin-bottom: -1px !important;
+  }
+  .footer{
+    text-align: center;
+    line-height: 25px;
+    font-size: 25px;
+    padding-top: 5px;
+  }
+
+  .phone{
+    text-align: center;
+    line-height: 2px;
+  }
+
+  .textConf{
+    margin-top: 30px;
+  }
+
+    .tarj:hover .imgBox{
+    transform:rotateY(-105deg)
+  }
+  .tarj{
+    width:200px;
+    height:250px;
+    position:relative;
+    top:140px;
+    left:50%;
+    margin: 0 0 30px 0;
+    transform:translate(-50%,-50%)perspective(2000px);
+    background:#fff;
+    transform-style:preserve-3d;
+    box-shadow:inset 300px 0 50px rgba(0,0,0,.5),0 20px 100px rgba(0,0,0,.5);
+    transition:1s;
+  }
+  .tarj:hover .imgBox{
+    transform:rotateY(-105deg)
+  }
+  .tarj .details h3{
+    font-family: 'Edwardian Script ITC', cursive !important;
+    font-size: 27px !important;
+    font-weight: bold;
+  }
+  .btn{
+    width: 150px;
+    height: 40px;
+    border: 2px solid;
+    border-color: #000;
+    border-radius: 10px;
+    line-height: 20px;
+    font-weight: 700;
+    cursor: pointer;
+    font-size: 20px;
+    color: #000;
+}
+.btn:hover{
+    cursor: pointer;
+    border-color: #000;
+    translate: 1px;
+    font-size: 22px;
+    color: #000;
+}
+  .modal-footer button:hover{
+    font-size: 28px !important;
+    background-color: #fff;
+    border: 2px solid #000;
+    color: red;
+}
+.confirm{
+  border: 2px solid #000;
+  border-radius: 10px;
+  width: 250px;
+}
+.button-whatsapp{
+  display: table;
+  text-decoration: none; 
+  font-size: 25px;
+  background: url(../images/whatsapp.png) no-repeat 40px center;background-size: 28px;
+  width: 290px;
+  height: 40px;   
+}
+.button-whatsapp:hover{
+  text-decoration: none;
+  font-size: 25px;
+}
+.container .button-whatsapp{
+  color: #000;
+  font-weight: 800;
+}
+}
