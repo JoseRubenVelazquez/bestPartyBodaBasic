@@ -1,7 +1,7 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: 'Edwardian Script ITC', cursive;
+    font-family: 'Edwardian Script ITC';
     list-style: none;
     box-sizing: border-box;
     color: #000;
@@ -139,7 +139,7 @@ h3{
   z-index:-1;
 }
 .tarj .details h3{
-  font-family: 'Edwardian Script ITC', cursive;
+  font-family: 'Edwardian Script ITC';
   font-size: 30px;
   font-weight: bold;
 }
@@ -165,7 +165,7 @@ h3{
   height: 80%;
   display: block;
   white-space: pre;
-  font: 20pt 'Edwardian Script ITC', cursive;
+  font: 20pt 'Edwardian Script ITC';
   color: #fff;
   font-weight: 700;
   border: 2px solid;
@@ -200,7 +200,7 @@ h3{
 }
 
 #papasNovio::after {
-  font-family: 'Edwardian Script ITC', cursive;;
+  font-family: 'Edwardian Script ITC';
   content: 'Paola & Diego';
   font-size: 35px;
 }
@@ -238,7 +238,7 @@ h3{
 }
 .snip1482 figcaption {
   position: absolute;
-  font-family: 'Edwardian Script ITC', cursive;
+  font-family: 'Edwardian Script ITC';
   width: 50%;
   top: 50%;
   left: 0;
@@ -508,10 +508,10 @@ footer{
   }
 @media(min-width: 320px) and (max-width: 650px){
   *{
-    font-family: 'Edwardian Script ITC', cursive !important;
+    font-family: 'Edwardian Script ITC' !important;
   }
   h1{
-    font-family: 'Edwardian Script ITC', cursive !important;
+    font-family: 'Edwardian Script ITC' !important;
     font-size: 40px;
     font-weight: bold;
     text-align: center;
@@ -523,18 +523,18 @@ footer{
     margin: 10px auto;
   }
   p{
-    font-family: 'Edwardian Script ITC', cursive !important;
+    font-family: 'Edwardian Script ITC' !important;
     font-size: 20px;
     text-align: center;
   }
 
   .names{
     font-size: 40px;
-    font-family: 'Edwardian Script ITC', cursive !important;
+    font-family: 'Edwardian Script ITC' !important;
   }
 
   h2{
-    font-family: 'Edwardian Script ITC', cursive !important;
+    font-family: 'Edwardian Script ITC' !important;
     text-align: center;
     font-size: 30px;
     font-weight: bold;
@@ -547,19 +547,19 @@ footer{
     font-weight: 700;
   }
   .ceremony{
-    font-family: 'Edwardian Script ITC', cursive !important;
+    font-family: 'Edwardian Script ITC' !important;
     font-size: 35px;
   }
   .reception{
-    font-family: 'Edwardian Script ITC', cursive !important;
+    font-family: 'Edwardian Script ITC' !important;
     font-size: 40px;
   }
   .card-title{
-    font-family: 'Edwardian Script ITC', cursive !important;
+    font-family: 'Edwardian Script ITC' !important;
     font-size: 22px !important;
   }
   .conf{
-    font-family: 'Edwardian Script ITC', cursive !important;
+    font-family: 'Edwardian Script ITC' !important;
     font-size: 35px;
     margin-top: 20px;
   }
@@ -656,7 +656,7 @@ footer{
     transform:rotateY(-105deg)
   }
   .tarj .details h3{
-    font-family: 'Edwardian Script ITC', cursive !important;
+    font-family: 'Edwardian Script ITC' !important;
     font-size: 27px !important;
     font-weight: bold;
   }
