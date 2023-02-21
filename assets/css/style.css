@@ -48,13 +48,6 @@ h2{
   font-size: 40px;
   font-weight: bold;
 }
-audio{
-  display: block;
-  margin: 0 auto 20px;
-}
-.pases{
-  font-size: 40px !important;
-}
 
 /*Papás Novia*/
 .acomp{
@@ -384,22 +377,6 @@ span{
     color: red;
 }
 
-/*Dress code*/
-.dresscode{
-  font-size: 50px;
-  margin-top: 20px;
-}
-.woman img{
-  display: block;
-  margin: auto;
-  height: 200px;
-}
-.man img{
-  display: block;
-  margin: auto;
-  height: 200px;
-}
-
 /*Confirmation*/
 .conf{
     font-size: 50px;
@@ -475,9 +452,8 @@ footer{
     transform: translateY(-250%);
     transition: ease-in-out 0.5s;
 }
-.faltan{
-  margin: 20px auto 0;
-}
+
+/*Pases*/
 .pase img{
   display: block;
   margin: auto;
@@ -489,6 +465,9 @@ footer{
 }
 
 /*Temporizador*/
+.faltan{
+  margin: 20px auto 0;
+}
 .timer{
     display: inline-block;
     color: #000;
@@ -508,6 +487,8 @@ footer{
       font-weight: bolder;
       font-size: 35px !important;
   }
+
+  /*Responsive desing*/
 @media(min-width: 320px) and (max-width: 650px){
   *{
     font-family: 'Edwardian Script ITC', cursive !important;
@@ -566,27 +547,7 @@ footer{
     width: 200px !important;
     height: 150px !important;
   }
-  .pases{
-    font-size: 30px !important;
-  }
-  /*Dress code*/
-  .dresscode{
-    font-size: 40px !important;
-    margin-bottom: -5px !important;
-  }
-  .woman img{
-    display: block;
-    margin: auto;
-    width: 50px !important;
-    height: 100px !important;
-  }
-  .man img{
-    display: block;
-    margin: auto;
-    width: 150px !important;
-    height: 100px !important;
-  }
-  
+
   .faltan{
     margin: 10px auto 50px;
   }
@@ -691,14 +652,14 @@ footer{
 .confirm{
   border: 2px solid #000;
   border-radius: 10px;
-  width: 250px;
+  width: 190px;
 }
 .button-whatsapp{
   display: table;
   text-decoration: none; 
   font-size: 25px;
   background: url(../images/whatsapp.png) no-repeat 40px center;background-size: 28px;
-  width: 290px;
+  width: 220px !important;
   height: 40px;   
 }
 .button-whatsapp:hover{
