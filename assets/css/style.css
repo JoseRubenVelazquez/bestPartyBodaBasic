@@ -538,16 +538,7 @@ footer{
     font-size: 35px;
     margin-top: 20px;
   }
-  .valido{
-    margin-top: -110px;
-  }
-  .pase img{
-    display: block;
-    margin: auto;
-    width: 200px !important;
-    height: 150px !important;
-  }
-
+  
   .faltan{
     margin: 10px auto 50px;
   }
@@ -659,7 +650,7 @@ footer{
   text-decoration: none; 
   font-size: 25px;
   background: url(../images/whatsapp.png) no-repeat 40px center;background-size: 28px;
-  width: 220px !important;
+  width: 230px !important;
   height: 40px;   
 }
 .button-whatsapp:hover{
